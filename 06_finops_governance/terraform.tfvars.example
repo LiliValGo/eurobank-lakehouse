@@ -1,0 +1,4 @@
+budget_amount = 5.0
+notification_emails = [
+  "tu-email@dominio.com"
+]
