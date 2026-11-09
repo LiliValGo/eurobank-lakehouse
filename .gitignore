@@ -1,0 +1,29 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Terraform ---
+**/.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+terraform.tfvars
+crash.log
+crash.*.log
+
+# --- Secrets / local ---
+.env
+*.pem
+*.key
+*-key.json
+Downloads/
+
+# --- OS / IDE ---
+.DS_Store
+.idea/
+.vscode/
