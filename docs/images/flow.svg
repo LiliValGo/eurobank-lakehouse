@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="690" viewBox="0 0 1280 690">
+<defs>
+  <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L7,3 L0,6 z" fill="#3A4150"/>
+  </marker>
+</defs>
+<rect width="1280" height="690" fill="#FFFFFF"/>
+<text x="40" y="44" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2430">EuroBank Lakehouse — Multicloud en Databricks</text>
+<text x="40" y="68" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#5B6472">3 fuentes (S3 · ADLS · GCS) gobernadas con Unity Catalog: ingesta &lt;15 min, silver/gold con calidad, GDPR y FinOps</text>
+<line x1="40" y1="86" x2="1240" y2="86" stroke="#DDE2E8" stroke-width="1.5"/>
+
+<text x="145" y="116" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5B6472" letter-spacing="0.5">FUENTES · 3 NUBES</text>
+<text x="455" y="116" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5B6472" letter-spacing="0.5">BRONZE · eurobank_bronze.raw (UC sobre S3)</text>
+<text x="745" y="116" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5B6472" letter-spacing="0.5">SILVER · eurobank_silver.cleaned</text>
+<text x="1005" y="116" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5B6472" letter-spacing="0.5">GOLD · eurobank_gold.analytics</text>
+<rect x="40" y="134" width="210" height="72" rx="10" fill="#FFF7E8" stroke="#E8963C" stroke-width="1.8"/>
+<text x="145.0" y="159" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">AWS S3</text>
+<text x="145.0" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">transacciones · JSONL</text>
+<rect x="40" y="214" width="210" height="72" rx="10" fill="#EAF3FE" stroke="#4285F4" stroke-width="1.8"/>
+<text x="145.0" y="239" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">Azure ADLS Gen2</text>
+<text x="145.0" y="260" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">logs móviles · JSON.GZ</text>
+<rect x="40" y="294" width="210" height="72" rx="10" fill="#E9F7EF" stroke="#1E8E5A" stroke-width="1.8"/>
+<text x="145.0" y="319" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">Google Cloud Storage</text>
+<text x="145.0" y="340" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">geolocalización · CSV</text>
+<line x1="252" y1="170" x2="326" y2="170" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="252" y1="250" x2="326" y2="250" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="252" y1="330" x2="326" y2="330" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="330" y="134" width="250" height="72" rx="10" fill="#F7E8D5" stroke="#A9682E" stroke-width="1.8"/>
+<text x="455.0" y="159" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">bronze_card_transactions</text>
+<text x="455.0" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">Auto Loader · file events</text>
+<rect x="330" y="214" width="250" height="72" rx="10" fill="#F7E8D5" stroke="#A9682E" stroke-width="1.8"/>
+<text x="455.0" y="239" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">bronze_mobile_logs</text>
+<text x="455.0" y="260" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">SP + SDK azure · secret scope</text>
+<rect x="330" y="294" width="250" height="72" rx="10" fill="#F7E8D5" stroke="#A9682E" stroke-width="1.8"/>
+<text x="455.0" y="319" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">bronze_geo_events</text>
+<text x="455.0" y="340" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">SA + gcsfs · secret scope</text>
+<line x1="582" y1="170" x2="636" y2="210" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="582" y1="250" x2="636" y2="245" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="582" y1="330" x2="636" y2="280" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="640" y="150" width="210" height="190" rx="10" fill="#ECEFF2" stroke="#6E7A87" stroke-width="1.8"/>
+<text x="745.0" y="175" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">SILVER</text>
+<text x="745.0" y="196" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">casts tipados (double/ts/bool)</text>
+<text x="745.0" y="212" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">7 expectations (warn / drop)</text>
+<text x="745.0" y="228" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">PII → hash SHA-256</text>
+<text x="745.0" y="244" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">streaming table +2 MVs</text>
+<text x="745.0" y="260" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">calidad auditable por expectation</text>
+<line x1="852" y1="245" x2="886" y2="245" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<text x="869" y="233" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#5B6472">flows</text>
+<rect x="890" y="150" width="230" height="190" rx="10" fill="#FBF3D5" stroke="#A9850B" stroke-width="1.8"/>
+<text x="1005.0" y="175" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">GOLD</text>
+<text x="1005.0" y="196" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">gold_user_spending</text>
+<text x="1005.0" y="212" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">gold_category_performance</text>
+<text x="1005.0" y="228" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">gold_user_activity_360</text>
+<text x="1005.0" y="244" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">(join de las3 nubes)</text>
+<line x1="660" y1="342" x2="260" y2="374" stroke="#3A4150" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+<rect x="40" y="378" width="360" height="96" rx="10" fill="#FDECEC" stroke="#C0504D" stroke-width="1.8"/>
+<text x="220.0" y="403" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">GDPR — right-to-be-forgotten</text>
+<text x="220.0" y="424" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">DELETE + VACUUM con evidencia de time travel</text>
+<text x="220.0" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">8 tablas · auditoría erasure_requests COMPLETED</text>
+<line x1="760" y1="342" x2="640" y2="374" stroke="#3A4150" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+<rect x="440" y="378" width="360" height="96" rx="10" fill="#F0EDF9" stroke="#6B5CA5" stroke-width="1.8"/>
+<text x="620.0" y="403" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">FinOps — observabilidad de costos</text>
+<text x="620.0" y="424" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">system.billing.usage · system.query.history</text>
+<text x="620.0" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">budgets50/80/100% + forecast (Terraform)</text>
+<line x1="1005" y1="342" x2="1020" y2="374" stroke="#3A4150" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="840" y="378" width="360" height="96" rx="10" fill="#E8F0FE" stroke="#4285F4" stroke-width="1.8"/>
+<text x="1020.0" y="403" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">SQL / BI</text>
+<text x="1020.0" y="424" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">KPIs por usuario, categoría y tiempo</text>
+<text x="1020.0" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">vista360 multicloud (S3 + ADLS + GCS)</text>
+<rect x="40" y="506" width="1200" height="84" rx="10" fill="#F4F6F8" stroke="#8A94A6" stroke-width="1.8"/>
+<text x="640.0" y="531" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#1F2430">GOBERNANZA — Unity Catalog</text>
+<text x="640.0" y="552" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">identidades por nube: SP (Azure) · SA (GCP) · IAM Role (AWS) — todo en secret scopes ·0 credenciales en código</text>
+<text x="640.0" y="568" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#5B6472">grants a data_engineers · linaje · auditoría de accesos · expectations como calidad como código</text>
+<text x="40" y="632" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F2430">evento → tabla en &lt;45 s (SLA &lt;15 min)   ·   exactly-once:300 filas =150×2, sin duplicados   ·   GDPR en minutos (SLA72 h)</text>
+<text x="40" y="656" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#5B6472">FinOps medido en DBU/GB   ·   gold con Photon   ·  0 secretos en código   ·  1 pipeline declarativa silver → gold (Lakeflow)</text>
+</svg>

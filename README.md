@@ -16,6 +16,8 @@ observabilidad **FinOps** con system tables.
 
 ## Arquitectura
 
+![EuroBank Lakehouse — flujo de datos](docs/images/flow.svg)
+
 ```mermaid
 flowchart LR
   subgraph Fuentes["Fuentes multicloud"]
